@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient( 179.6deg,  rgb(0, 14, 19) -4.9%, rgba(0,77,105,1) 108.4% );
+    line-height: 1.6;
+}
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5vh;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2{
+    font-size: 24px;
+    color: #fff;
+    font-family: "Margarine", sans-serif;
+    font-size: 25px;
+}
+
+.nav-links {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 10px;
+    margin-right: 18px;
+    list-style: none;
+    display: flex;
+}
+.nav-links :hover{
+    transform: scale(1.05);
+}
+
+.nav-links li {
+    margin-left: 20px;
+    
+}
+
+.nav-links a {
+    color: #dad9d9;
+    text-decoration: none;
+    color: rgb(218, 215, 215);
+    font-size: 15px;
+}
+.nav-links a:hover{
+    color: rgb(220, 219, 219);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    margin-right: 20px;
+    background-color: #d3d1d1;
+    margin: 4px 0;
+}
+.services {
+    max-width: 1200px;
+    margin-top: 50px;
+    text-align: center;
+    
+    background-image: linear-gradient( 179.6deg,  rgb(0, 14, 19) -4.9%, rgba(0,77,105,1) 108.4% );
+}
+
+h2 {
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(211, 210, 210);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 20px;
+    color: rgb(218, 215, 215);
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: transparent;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.service-card {
+    color: rgb(215, 213, 213);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.372);
+    flex: 1 1 calc(50% - 40px);
+    background-image: (rgb(0, 14, 19) -4.9%);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.service-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.service-card p {
+    background-color: transparent;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 20px;
+}
+
+.video-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 285px;
+    border-radius: 8px;
+}
+
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .container{
+        height: 100vh;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        top: 60px;
+        height: 100vh;
+        left: 0;
+        margin-right: 20px;
+        /* background-image: linear-gradient( 179.6deg,  rgba(0, 14, 19, 0.276) -4.9%, rgba(0, 77, 105, 0.253) 108.4% ); */
+        backdrop-filter: blur(15px);
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: 20px;
+    }
+    
+}
+.show {
+    display: flex !important;
+}
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 1 100%;
+    }
+
+    .video iframe,
+    .image img {
+        height: 180px;
+    }
+}
