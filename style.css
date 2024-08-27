@@ -292,12 +292,15 @@ footer{
     font-weight: 50;
     font-family: "Ubuntu", sans-serif;
 }
-@media (min-width: 768px){
+@media (min-width: 600px){
     .info{
         display: none;
+        border: solid 2px red;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    
+
     .container{
         height: 100vh;
     }
@@ -366,8 +369,9 @@ footer{
         margin-top: 15vh;
     }
     footer{
-        display: flex;
+        display:none;
         flex-direction: column;
+        margin-top: 50px;
         height: 20vh;
         gap: 30px;
         justify-content: end;
